@@ -11,7 +11,7 @@
 }
 @font-face{
     font-family:'Roboto Mono';
-    src: url('/home/celine/EXERCICES/HTML_CSS/ProjetCoachSportif/Roboto Mono/static/RobotoMono-Light.ttf') format('truetype');
+    src: url('/home/celine/EXERCICES/HTML_CSS/ProjetCoachSportif/Projet-CoachSportif/Roboto Mono/static/RobotoMono-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -60,7 +60,7 @@ footer{
   height: 100px;
 }
 
-.logo {
+#logo {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -106,6 +106,7 @@ input[type=Envoyez] {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin-bottom: -20px;
 }
 
 /* Floating column for labels: 25% width */
