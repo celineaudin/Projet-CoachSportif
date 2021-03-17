@@ -1,0 +1,180 @@
+/*
+body {
+  color: #243358;
+  color: #059EBE;
+  color: #6AD8CC;
+  color: #F19D83;
+  color: #F46466;
+}
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	font-family: "Roboto Mono", sans-serif;
+	color: #F46466;
+}
+header {
+	border-bottom-style: solid;
+	border-color: #059EBE;
+	padding: 5px;
+}
+.toppage {
+	height: 65px;
+	width: 100%;
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+h1 {
+	font-size: 1.8em;
+	color: #F46466;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+h2 {
+	margin-top: -10px;
+	font-size: 1.5em;
+	color: white;
+	margin-left: 200px;
+	font-weight: normal;
+}
+h3 {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 2em;
+}
+/*.container {
+  height: 650px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}*/
+
+.superContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 600px;
+}
+.container {
+	position: relative;
+	width: 400px;
+}
+.container img {
+	display: block;
+	width: 400px;
+	height: auto;
+	height: 400px;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 400px;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #F19D83;
+}
+.container:hover .overlay {
+	opacity: 1;
+}
+.text {
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/*.group img {
+  width: 400px;
+  height: 400px;
+}
+.work img {
+  width: 400px;
+  height: 400px;
+}*/
+
+footer {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	background-color: #243358;
+	margin-top: 20px;
+	color: #6AD8CC;
+	align-items: center;
+	height: 100px;
+	position: fixed;
+	bottom: 0%;
+	border: 1px solid black;
+}
+#logo {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+	width: 500px;
+}
+li img {
+	width: 50px;
+	height: 50px;
+}
+/*IPAD*/
+
+@media all and (min-width: 768px) and (max-width: 1394px) {
+	.superContainer {
+		display: flex;
+    flex-direction: column;
+	}
+	footer {
+		height: 90px;
+	}
+	#logo {
+		width: 300px;
+	}
+	li img {
+		width: 60%;
+	}
+	p {
+		font-size: 0.9em;
+	}
+}
+/*TELEPHONE*/
+
+@media all and (min-width: 375px) and (max-width: 767px) {
+	.superContainer {
+		display: flex;
+		flex-direction: column;
+	}
+	footer {
+		height: 50px;
+	}
+	li img {
+		width: 60%;
+	}
+	p {
+		font-size: 0.7em;
+	}
+	#logo {
+		width: 150px;
+	}
+	li img {
+		width: 50%;
+	}
+	.info p {
+		font-size: 8px;
+	}
+}
