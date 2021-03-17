@@ -9,48 +9,41 @@
     margin: 0;
     padding: 0;
 }
-@font-face{
-    font-family:'Roboto Mono';
-    src: url('/home/celine/EXERCICES/HTML_CSS/ProjetCoachSportif/Projet-CoachSportif/Roboto Mono/static/RobotoMono-Light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 body{
-  font-family:'Roboto Mono';
-  font-weight: medium;
-  font-size: 1em;
+  font-family: 'Roboto Mono', sans-serif;
+  line-height: 1.4;
 }
 
 .toppage {
     display: flex;
     flex-direction: column;
     align-items:center;
-    height: 90px;
+    height: 65px;
     width: 100%;
     background-color: var(--primary-color);
   }
 
-.titre_principal{
-  font-size: 2em;
+h1{
+  font-size: 1.8em;
   color: #F46466;
   margin-bottom: 0px;
+  font-weight: normal;
 }
 
-.sous_titre{
+h2{
   font-size: 1.5em;
   color:white;
-  margin-top: 0px;
+  margin-top: -10px;
   margin-left: 200px;
-}
+  font-weight: normal;
 
-header{
-  border-bottom-style:solid;
-  border-color: #059EBE;
-  padding: 5px;
 }
 
 footer{
   display: flex;
+  position: fixed;
+  bottom: 0%;
   width: 100%;
   justify-content: space-around;
   background-color: #243358;
@@ -70,57 +63,62 @@ footer{
 
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
-  width: 100%;
+  width: 98%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
   color: #0077B7;
+
 }
 
 /* Style the label to display next to the inputs */
 label {
-  padding: 12px 12px 12px 0;
   display: inline-block;
-  color: #F61C0D;
+  color:  #F19D83;
   font-weight: bold;
+  padding-left: 20px;
+
 }
 
 /* Style the submit button */
 input[type=Envoyez] {
   background-color: #F19D83;
-  color: white;
-  padding: 10px 0px 10px 50px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: left;
   color: #0077B7;
   font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  height: 50px;
 }
 
 /* Style the container */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
-  margin-bottom: -20px;
+  height: 800px;
+  padding-top: 20px;
 }
 
 /* Floating column for labels: 25% width */
 .col-25 {
   float: left;
   width: 25vw;
-  margin-top: 6px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75vw;
-  margin-top: 6px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 /* Clear floats after the columns */
@@ -131,9 +129,11 @@ input[type=Envoyez] {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+@media screen and (max-width: 1000px) {
+  .col-25, .col-75, input[type=Envoyez] {
     width: 100%;
-    margin-top: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
   }
 }
